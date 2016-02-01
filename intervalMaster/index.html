@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Interval Master</title>
+		<link rel="stylesheet" href="main.css">
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+		<meta name="viewport" content="width=device-width">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.min.js"></script>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.min.css" rel="stylesheet">
+		<script src="index.js"></script>
+	</head>
+	<body ng-app="ScoreApp">
+		<div id="fullpage">
+			<div class="page1 section">
+				<div class="title">Mastering Intervals</div>
+				<div class="keyboard-container">
+					<div class="keyboard-holder">
+						<div class="white key start" note="C3" style="width: 40px; height: 200px; left: -280px;">C3</div>
+						<div class="black key start" note="C#3" style="width: 30px; height: 120px; left: -260px;">C#3</div>
+						<div class="white key start" note="D3" style="width: 40px; height: 200px; left: -240px;">D3</div>
+						<div class="black key start" note="D#3" style="width: 30px; height: 120px; left: -215px;">D#3</div>
+						<div class="white key start" note="E3" style="width: 40px; height: 200px; left: -200px;">E3</div>
+						<div class="white key start" note="F3" style="width: 40px; height: 200px; left: -160px;">F3</div>
+						<div class="black key start" note="F#3" style="width: 30px; height: 120px; left: -140px;">F#3</div>
+						<div class="white key start" note="G3" style="width: 40px; height: 200px; left: -120px;">G3</div>
+						<div class="black key start" note="G#3" style="width: 30px; height: 120px; left: -100px;">G#3</div>
+						<div class="white key start" note="A3" style="width: 40px; height: 200px; left: -80px;">A3</div>
+						<div class="black key start" note="A#3" style="width: 30px; height: 120px; left: -60px;">A#3</div>
+						<div class="white key start" note="B3" style="width: 40px; height: 200px; left: -40px;">B3</div>
+						<div class="white key start" note="C4" style="width: 40px; height: 200px; left:0px;">C4</div>
+						<div class="black key start" note="C#4" style="width: 30px; height: 120px; left: 25px;">C#4</div>
+						<div class="white key start" note="D4" style="width: 40px; height: 200px; left: 40px;">D4</div>
+						<div class="black key start" note="D#4" style="width: 30px; height: 120px; left: 65px;">D#4</div>
+						<div class="white key start" note="E4" style="width: 40px; height: 200px; left: 80px;">E4</div>
+						<div class="white key start" note="F4" style="width: 40px; height: 200px; left: 120px;">F4</div>
+						<div class="black key start" note="F#4" style="width: 30px; height: 120px; left: 145px;">F#4</div>
+						<div class="white key start" note="G4" style="width: 40px; height: 200px; left: 160px;">G4</div>
+						<div class="black key start" note="G#4" style="width: 30px; height: 120px; left: 185px;">G#4</div>
+						<div class="white key start" note="A4" style="width: 40px; height: 200px; left: 200px;">A4</div>
+						<div class="black key start" note="A#4" style="width: 30px; height: 120px; left: 225px;">A#4</div>
+						<div class="white key start" note="B4" style="width: 40px; height: 200px; left: 240px;">B4</div>
+						<div class="white key start" note="C5" style="width: 40px; height: 200px; left: 280px;">C5</div>
+						<div class="black key start" note="C#5" style="width: 30px; height: 120px; left: 300px;">C#5</div>
+						<div class="white key start" note="D5" style="width: 40px; height: 200px; left: 320px;">D5</div>
+						<div class="black key start" note="D#5" style="width: 30px; height: 120px; left: 345px;">D#5</div>
+						<div class="white key start" note="E5" style="width: 40px; height: 200px; left: 360px;">E5</div>
+						<div class="white key start" note="F5" style="width: 40px; height: 200px; left: 400px;">F5</div>
+						<div class="black key start" note="F#5" style="width: 30px; height: 120px; left: 425px;">F#5</div>
+						<div class="white key start" note="G5" style="width: 40px; height: 200px; left: 440px;">G5</div>
+						<div class="black key start" note="G#5" style="width: 30px; height: 120px; left: 465px;">G#5</div>
+						<div class="white key start" note="A5" style="width: 40px; height: 200px; left: 480px;">A5</div>
+						<div class="black key start" note="A#5" style="width: 30px; height: 120px; left: 505px;">A#5</div>
+						<div class="white key start" note="B5" style="width: 40px; height: 200px; left: 520px;">B5</div>
+						<div class="white key start" note="C6"g style="width: 40px; height: 200px; left: 560px;">C6</div>
+					</div>
+				</div>
+
+				<div  ng-controller="ScoreController">
+					<div class="rows">
+						<div class="row rowtop1">
+							<div class="col s1" interval="m2" ng-click="checkAnswer()">m2</div>
+							<div class="col s1" interval="m3" ng-click="checkAnswer()">m3</div>
+							<div class="col s1" interval="m6" ng-click="checkAnswer()">m6</div>
+							<div class="col s1" interval="m7" ng-click="checkAnswer()">m7</div>
+						</div>
+
+						<div class="row rowmid">
+							<div class="col s1" interval="M2" ng-click="checkAnswer()">M2</div>
+							<div class="col s1" interval="M3" ng-click="checkAnswer()">M3</div>
+							<div class="col s1" interval="M6" ng-click="checkAnswer()">M6</div>
+							<div class="col s1" interval="M7" ng-click="checkAnswer()">M7</div>
+						</div>
+
+						<div class="row">
+							<div class="col s1" interval="P4" ng-click="checkAnswer()">P4</div>
+							<div class="col s1" interval="A4" ng-click="checkAnswer()">A4 or D5</div>
+							<div class="col s1" interval="P5" ng-click="checkAnswer()">P5</div>
+							<div class="col s1" interval="P8" ng-click="checkAnswer()">P8</div>
+						</div>
+					</div>
+
+					<div class="card-panel exercises">
+						<strong>
+						<div class="exElem1" id="ascDesSetting" ng-click="toggleAscDes()">{{ascDesSetting}}</div>
+						<div class="exElem2" id="melHarSetting" ng-click="toggleMelHar()">{{melHarSetting}}</div>
+						<div class="exElem" ng-click="playInterval()"><i class="material-icons iconPos">play_arrow</i>play</div>	
+						<div class="exElem"><span class="strong" id="customColor"><i class="material-icons">{{evaluation}}</i></span>{{bottomNote}}{{topNote}}{{expected}}</div>	
+						<div class="exElem">score: {{counter}} high: {{highscore}}</div>
+						</strong>	
+					</div>
+				</div>
+			</div>
+			<div class="page2 section">
+				<div class="slide fp-slide active">
+					<div class="title2">The Music Theory of Intervals</div>
+					<div class="card large cardl">
+						<p class="musictheoryP">
+							You can measure <strong>intervals</strong> by using half-steps on the keyboard.
+						</p>
+					</div>
+				</div>
+				<div class="slide fp-slide">
+					<div class="title2">Major & Perfect Intervals</div>
+					<div class="card large cardl">
+						<div class="mpexampleP">
+							A <strong>major second (M2)</strong> consists of two half-steps. 
+							<br>
+							For example, C to D is a major second because it starts with C, goes a half-step up to C#, and one more half-step up to D.
+							<br>
+							A <strong>major third (M3)</strong> consists of four half-steps. For example, C to E.
+							<br>
+							A <strong>perfect fourth (P4)</strong> consists of five half-steps. For example, C to F.
+							<br>
+							A <strong>perfect fifth (P5)</strong> consists of seven half-steps. For example, C to G.
+							<br>
+							A <strong>major sixth (M6)</strong> consists of nine half-steps. For example, C to A.
+							<br>
+							A <strong>major seventh (M7)</strong> consists of eleven half-steps. For example, C to B.
+							<br>
+							A <strong>perfect eighth (P8) or perfect octave</strong> consists of 12 half-steps. For example, C to C.
+							<br><br>
+							The musical terms <strong>major</strong> and <strong>perfect</strong> refer to the interval's <strong>quality</strong>.
+						</div>
+					</div>
+				</div>
+				<div class="slide fp-slide">
+					<div class="title2">Minor Intervals</div>
+					<div class="card large cardl">
+						<div class="mpexampleP">
+							<strong>Minor</strong> intervals have one less half step than a major interval.
+							<br>
+							<br>
+							A <strong>minor third (m2)</strong> consists of one half-step. For example, C to C#.
+							<br>
+							A <strong>minor third (m3)</strong> consists of three half-steps. For example, C to Eb or (D#).
+							<br>
+							A <strong>minor sixth (m6)</strong> consists of eight half-steps. For example, C to Ab or (G#).
+							<br>
+							A <strong>minor seventh (m7)</strong> consists of ten half-steps. For example, C to Bb or (A#).
+						</div>
+					</div>
+				</div>
+				<div class="slide fp-slide">
+					<div class="title2">Augmented & Diminished Intervals</div>
+					<div class="card large cardl">
+						<div class="mpexampleP">
+							An <strong>augmented</strong> interval has one more half step than a perfect one.
+							<br>
+							The <strong>augmented fourth (A4) or tritone</strong> consists of six half-steps. For example, C to F#.
+							<br>
+							<br>
+							A <strong>diminished</strong> interval has one less half step than a perfect one.
+							<br>
+							The <strong>diminished fifth (D5) also the tritone</strong> consists of six half-steps. For example, C to Gb or (F#).
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section page3">
+				<div class="title">Acknowledgements</div>
+				<div class="card large cardl">
+					<div class="mpexampleP">
+						Please refer to <a href="http://www.keithwhor.com/music/" target="_blank">keithwhor.com/music</a> for a further breakdown of the science behind javascript audio and the inspiration for the CSS keyboard styling.
+						<br>
+						<br>
+						The flat design featured in this project follows the outline of <a href="http://materializecss.com/" target="_blank">materialize.css</a> - a frontend framework for styling pages.
+						<br>
+						<br>
+						The page to page navigation receives its powers from <a href="http://alvarotrigo.com/ fullPage/" target="_blank">fullpage.js</a>.
+						<br>
+						<br>
+						An angular application built by David Katz.
+					</div>
+				</div>
+			</div>	
+			</div>
+		</div>
+	</body>
+</html>

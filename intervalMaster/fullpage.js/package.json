@@ -1,0 +1,69 @@
+{
+  "name": "fullpage.js",
+  "version": "2.7.6",
+  "description": "Create  beautiful fullscreen scrolling websites",
+  "main": "jquery.fullPage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alvarotrigo/fullPage.js.git"
+  },
+  "keywords": [
+    "jquery",
+    "scrolling",
+    "single_page",
+    "one_page",
+    "sliding"
+  ],
+  "files": [
+    "vendors",
+    "jquery.fullPage.css",
+    "jquery.fullPage.js",
+    "jquery.fullPage.scss",
+    "package.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "jquery": ">=1.6.0"
+  },
+  "authors": [
+    "Alvaro Trigo https://github.com/alvarotrigo"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alvarotrigo/fullPage.js/issues"
+  },
+  "homepage": "https://github.com/alvarotrigo/fullPage.js",
+  "namespace": "$.fn.fullpage",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.4.1"
+  },
+  "_id": "fullpage.js@2.7.6",
+  "_shasum": "6fc06b7f678373d725a1449ad78d2dacd23e13d6",
+  "_from": "fullpage.js@*",
+  "_npmVersion": "2.8.4",
+  "_nodeVersion": "4.1.2",
+  "_npmUser": {
+    "name": "alvarotrigo",
+    "email": "alvaro@alvarotrigo.com"
+  },
+  "maintainers": [
+    {
+      "name": "alvarotrigo",
+      "email": "atrigol@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "6fc06b7f678373d725a1449ad78d2dacd23e13d6",
+    "tarball": "http://registry.npmjs.org/fullpage.js/-/fullpage.js-2.7.6.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/fullpage.js/-/fullpage.js-2.7.6.tgz"
+}

@@ -1,0 +1,186 @@
+/*CSS keyboard inspired by Keith William Horwood*/
+.html {
+	font-family: "Roboto", sans-serif;
+}
+
+.title, .title2 {
+	font-size: 48px;
+}
+
+
+.title, .title2 {
+	text-align: center;
+	font-weight: 400;
+}
+
+.title2 {
+	margin-top: -4.5%;
+}
+
+.page2 {
+	background-color: #c8e6c9;
+}
+
+.page3 {
+	background-color: #989898;
+}
+
+
+.cardl {
+	width: 60vw;
+	left: 20vw;
+	display: inline-block;
+	text-align: center;
+}
+
+.musictheoryP, .mpexampleP {
+	padding: 2.5%;
+}
+
+.musictheoryP {
+	text-align: center;
+	font-size: 22px;
+}
+
+.mpexampleP {
+	text-align: left;
+	font-size: 20px;
+}
+
+.keyboard-container {
+	float: left;
+	left: 48.8%;
+	position: relative;
+}
+
+.keyboard-holder {
+	height: 200px;
+	width: 280px;
+	margin-top: 4%;
+
+	float: left;
+	left: -51.2%;
+	position: relative;
+}
+
+.white {
+	background-color: #ffffff;
+	color: #000000;
+	z-index: 0;
+	text-shadow: 0px 1px 1px rgba(32, 32, 32, 0.5);
+	line-height: 380px;
+	/*text-shadow?*/
+}
+
+.black {
+	background-color: #000000;
+	color: #ffffff;
+	z-index: 1;
+	text-shadow: 0px -1px 1px rgba(255, 255, 255, 255, 0.5);
+	line-height: 215px;
+}
+
+.key {
+	position: absolute;
+	font-family: Helvetica;
+	font-weight: 100;
+	font-size: 14px;
+	vertical-align: bottom;
+	text-align: center;
+
+	border: 1px solid rgba(32, 32, 32, 32, 0.2);
+	border-top-color: rgba(32, 32, 32, 32, 0.2);
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-radius: 0px 0px 5px 5px;
+	box-shadow: 0px 5px 1px rgba(32, 32, 32, 0.2);
+}
+
+.key:hover {
+	color: #66bb6a;
+	font-size: 16px;
+
+}
+.rows {
+	margin-top: 250px;
+	position: relative;
+	margin-bottom: -10px;
+}
+
+.row {
+	position: relative;
+	text-align: center;
+	left: 32%;
+	margin-top: -20px;
+}
+
+.row .col.s1 {
+	border: 1px solid white;
+	margin: 7px;
+	background-color: #66bb6a;
+	color: white;
+	border-radius: 4px;
+	line-height: 40px;
+	font-size: 1.15rem;
+	font-weight: bold;
+}
+
+.rowmid .col.s1 {
+	background-color: #afdf81;
+}
+
+.exercises {
+	width: 80%;
+	position: relative;
+	left: 10%;
+	display: inline-block;
+}
+
+.exElem, .exElem1, .exElem2 {
+	width: 30%;
+	font-size: 1.25rem;
+	background-color: #787878;
+	text-align: center;
+	color: #ffffff;
+	border-radius: 4px;
+	float: left;
+	margin-left: 2.75%;
+	height: 50px;
+	line-height: 50px;
+	/*vertical-align: middle;*/
+}
+
+.exElem1, .exElem2 {
+	margin-bottom: 2%;
+	height: 30px;
+	line-height: 30px;
+}
+
+.exElem1 {
+	margin-right: 32.75%;
+}
+
+#ascDesSetting, #melHarSetting {
+	background: #a5d6a7;
+	color: #fff;
+}
+
+#customColor {
+	float: left;
+	margin-top: 7px;
+	margin-left: 13px;
+	margin-right: -13px;
+}
+
+.iconPos {
+	float: left;
+	margin-left: 26px;
+	margin-top: 13px;
+	margin-right: -36px;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color: #66bb6a;
+	text-decoration: none;
+}
+
