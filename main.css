@@ -23,3 +23,7 @@ p {
 .header1 {
 	font-size: 22px;
 }
+
+.page2 .title, .page3 .title {
+	margin-top: -6%;
+}
