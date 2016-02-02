@@ -5,6 +5,13 @@
 
 body {
 	text-align: center;
+	font-size: 24px;
+}
+
+#scaleDisplay {
+	font-size: 34px;
+	margin-bottom: -2.5%;
+	margin-top: 1%;
 }
 
 canvas {
@@ -28,9 +35,8 @@ canvas {
 
 .canvasa {
 	width: 62.5%;
-	margin-left: auto;
-	margin-right: auto;
 	margin-top: 2.5%;	
+	margin-left: 18.875%;
 }
 
 .scaleButtons {
@@ -50,6 +56,6 @@ canvas {
 
 .card {
 	width: 65%;
-	margin-left: 17.5%;
+	left: 17.5%;
 	height: 180px;
 }

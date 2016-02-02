@@ -1,3 +1,25 @@
 body {
 	text-align: center;
 }
+
+p {
+	float: inline;
+	width: 80%;
+	margin-left: 10%;
+	font-size: 18px;
+}
+
+#profilepic {
+	margin-top: -5%;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+.title {
+	font-size: 26px;
+}
+
+.header1 {
+	font-size: 22px;
+}
