@@ -16,7 +16,7 @@ p {
 	border-radius: 50%;
 }
 
-.title {
+.title, .title2 {
 	font-size: 26px;
 }
 
@@ -24,6 +24,6 @@ p {
 	font-size: 22px;
 }
 
-.page2 .title, .page3 .title {
-	top: -25%;
+.title2 {
+	margin-top: -10%;
 }
