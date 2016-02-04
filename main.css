@@ -16,10 +16,12 @@ body {
 	float: left;
 	margin-left: 12.5%;
 	width: 30%;
-	height: 30%;
+	height: 30px;
+	padding-top: 5px;
 	border-radius: 5px;
 	background: #1e88e5;
 	color: #fff;	
+	font-weight: bold;
 }
 
 .blkButton {

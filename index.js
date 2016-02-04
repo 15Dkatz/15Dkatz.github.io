@@ -55,10 +55,10 @@ micApp.controller("listenController", function($scope) {
 		console.log(randKeyNum, "rkm");
 
 		var noteFromKey = teoria.note.fromKey(randKeyNum);
-		$scope.bottomNote = noteFromKey.name() + noteFromKey.accidental() + noteFromKey.octave();
+		$scope.bottomNote = noteFromKey.name().toUpperCase() + noteFromKey.accidental() + noteFromKey.octave();
 
 		var topNoteFromTop = teoria.note.fromKey(randKeyTop);
-		$scope.topNote = topNoteFromTop.name() + topNoteFromTop.accidental() + topNoteFromTop.octave();
+		$scope.topNote = topNoteFromTop.name().toUpperCase() + topNoteFromTop.accidental() + topNoteFromTop.octave();
 
 		//debugging
 		console.log($scope.bottomNote, $scope.topNote, "n->t")
@@ -70,7 +70,7 @@ micApp.controller("listenController", function($scope) {
 	}
 
 	$scope.scoreCount=0;
-
+	// $scope.userNote=$scope.userNote.toUpperCase();
 
 	//need to include note playing.
 
@@ -83,8 +83,8 @@ micApp.controller("listenController", function($scope) {
 
 
 		//taking off ending nums.
-		var uNote = $scope.userNote.toLowerCase().substr(0, $scope.userNote.length-1);
-		var tNote = $scope.topNote.substr(0, $scope.topNote.length-1);
+		var uNote = $scope.userNote.substr(0, $scope.userNote.length-1);
+		var tNote = $scope.topNote.toUpperCase().substr(0, $scope.topNote.length-1);
 
 		console.log(uNote, tNote, "un compares to tn");
 
@@ -98,9 +98,24 @@ micApp.controller("listenController", function($scope) {
 
 	} 
 
+	var bnSine = new Wad({source: 'sine'});
+
 	$scope.playBottomNote = function() {
 
 		//play battom Note...
+		bnSine.play({
+			volume: 0.8,
+			wait: 0,
+			pitch: $scope.bottomNote,
+			filter: {frequency: 900}
+		})
+		console.log("playing", $scope.bottomNote);
+	}
+
+	$scope.stopBottomNote = function() {
+		//stop bottom Note...
+		bnSine.stop($scope.bottomNote);
+		console.log("stopping", $scope.bottomNote);
 	}
 
 
