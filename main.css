@@ -3,7 +3,30 @@ body {
 }
 
 
-.icon {
+/*.icon {
  width: 200%;
  height: 200px;
+}*/
+.buttonSection {
+	width: 100%;
+}
+
+.button, .blkButton {
+	margin-top: 2.5%;
+	float: left;
+	margin-left: 12.5%;
+	width: 30%;
+	height: 30%;
+	border-radius: 5px;
+	background: #1e88e5;
+	color: #fff;	
+}
+
+.blkButton {
+	background: #000;
+}
+
+.quizLine {
+	margin-top: 0%;
+	font-size: 22px;
 }

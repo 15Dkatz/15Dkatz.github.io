@@ -13,17 +13,29 @@
 	</head>
 	<body ng-app="micApp">
 		<div ng-controller="listenController">
-			<div class="title">Practice Intervals Live!</div>
+			<div class="title">Practice Intervals - Live</div>
+			<h2>Practice with your voice, piano, or any musical instrument!</h2>
 			<!-- <div class="icon android-microphone-off"></div> -->
 			<!-- If microphone listening, then switch icon to android-microphone -->
-
-			<div ng-mouseover="listen()">Listen</div>
+			<div class="quizLine">Sing the {{intervalLength}} up from {{bottomNote}}</div>
+			<div class="buttonSection">
+				<div class="button" ng-mousedown="listen()" ng-mouseup="stopListen()">Record your Answer</div>
+				<div class="button blkButton">Heard: {{userNote}}</div>
+			</div class="buttonSection">
+				<div class="button" ng-click="generateInterval()">Generate Example</div>
+				<div class="button"> Score: {{scoreCount}}</div>
+			<div>
+			<div class="buttonSection">
+				<div class="button">Play bottom Note</div>
+				<div class="button" ng-click="checkAnswer()">Check Answer</div>
+			</div>
 		</div>
 	</body>
 	<footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.min.js"></script>
 		<script src="wad.js"></script>
+		<script src="teoria.js"></script>
 		<script src="index.js"></script>
 	</footer>
 </html>
