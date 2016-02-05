@@ -10,7 +10,7 @@ micApp.controller("listenController", function($scope) {
 
 	$scope.listen = function() {
 		// if (!kill===true) {
-		voice.play();
+		voice.play({volume: 0.2});
 		tuner.updatePitch();
 
 		var logPitch = function(){
