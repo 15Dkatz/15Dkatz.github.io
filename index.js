@@ -4,7 +4,7 @@ micApp.controller("listenController", function($scope) {
 	var tuner = new Wad.Poly();
 	tuner.add(voice);
 
-	$scope.userNote="";
+	$scope.userNote="...";
 
 	// var kill=false;
 
@@ -39,11 +39,11 @@ micApp.controller("listenController", function($scope) {
 
 
 	// var noteNames = ['f3', 'f']
-	$scope.bottomNote = undefined;
-	$scope.topNote = undefined;
-	$scope.intervalLength = undefined;
+	$scope.bottomNote = "...";
+	$scope.topNote = "...";
+	$scope.intervalLength = "...";
 
-	var bottomNoteFQ = undefined;
+	var bottomNoteFQ = "...";
 
 	$scope.generateInterval = function() {
 		//pick a random number 33-45, or F3 to F4.
@@ -58,10 +58,11 @@ micApp.controller("listenController", function($scope) {
 
 		var noteFromKey = teoria.note.fromKey(randKeyNum);
 		bottomNoteFQ=noteFromKey.fq();
-		$scope.bottomNote = noteFromKey.name().toUpperCase() + noteFromKey.accidental() + noteFromKey.octave();
+		// noteFromKey.octave() for octave specification if needed.
+		$scope.bottomNote = noteFromKey.name().toUpperCase() + noteFromKey.accidental();
 
 		var topNoteFromTop = teoria.note.fromKey(randKeyTop);
-		$scope.topNote = topNoteFromTop.name().toUpperCase() + topNoteFromTop.accidental() + topNoteFromTop.octave();
+		$scope.topNote = topNoteFromTop.name().toUpperCase() + topNoteFromTop.accidental();
 
 		//debugging
 		console.log($scope.bottomNote, $scope.topNote, "n->t")
@@ -75,19 +76,11 @@ micApp.controller("listenController", function($scope) {
 	$scope.scoreCount=0;
 	// $scope.userNote=$scope.userNote.toUpperCase();
 
-	//need to include note playing.
+	$scope.total=0;
 
 	$scope.checkAnswer = function() {
-		//check if sung topNote = the desired interval.
-		//use teoria.js interval method.
-
-
-		//really check if note letter, and note accidental is the same.
-
-
-		//taking off ending nums.
-		var uNote = $scope.userNote.substr(0, $scope.userNote.length-1);
-		var tNote = $scope.topNote.toUpperCase().substr(0, $scope.topNote.length-1);
+		var uNote = $scope.userNote;
+		var tNote = $scope.topNote.toUpperCase();
 
 		console.log(uNote, tNote, "un compares to tn");
 
@@ -95,10 +88,10 @@ micApp.controller("listenController", function($scope) {
 			$scope.scoreCount++;
 		} else {
 			//resetting high score Code here.
-
+			$scope.scoreCount=0;
 			console.log("Try again!");
 		}
-
+		total++;
 	} 
 
 	var bnSine = new Wad({source: 'sine'});

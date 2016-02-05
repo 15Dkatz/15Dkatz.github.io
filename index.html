@@ -12,23 +12,31 @@
 	</head>
 	<body ng-app="micApp">
 		<div ng-controller="listenController">
-			<div class="title">Practice Intervals - Live</div>
-			<h2>Practice with your voice, piano, or any musical instrument!</h2>
-			<!-- <div class="icon android-microphone-off"></div> -->
+			<h2>Ear train with your voice, piano, or any musical instrument!</h2>
+			<!-- Add descending option... -->
+			<div class="card">The program will provide an interval with a bottom and top note, as well as the interval quality and length. The program will play the bottom note for you, but you get to sing the top note to complete the interval!</div>
+			<!-- <div class="icon android-microphone-off"></div> -->	
 			<!-- If microphone listening, then switch icon to android-microphone -->
 			<div class="quizLine">Sing the {{intervalLength}} up from {{bottomNote}}</div>
-			<div class="buttonSection">
-				<div class="button" ng-mousedown="listen()" ng-mouseup="stopListen()">Record your Answer</div>
-				<div class="button blkButton">Heard: {{userNote}}</div>
-			</div class="buttonSection">
-				<div class="button" ng-click="generateInterval()">Generate Example</div>
-				<div class="button"> Score: {{scoreCount}}</div>
-			<div>
-			<div class="buttonSection">
-				<div class="button" ng-mousedown="playBottomNote()" ng-mouseup="stopBottomNote()">Play bottom Note</div>
-				<div class="button" ng-click="checkAnswer()">Check Answer</div>
+
+			<div class="card cardHeard">Heard: <div id="userNoteDisplay">{{userNote}}</div>
+				<div class="scoreLine">
+					<div>Score: {{scoreCount}} / {{total}}</div>
+				</div>
 			</div>
-		</div>
+
+
+			<div class="button buttonRecord" ng-mousedown="listen()" ng-mouseup="stopListen()">Record</div>
+			<div>
+				<div class="button buttonItem3" ng-click="generateInterval()">Next</div>
+				<div class="button buttonItem3" ng-mousedown="playBottomNote()" ng-mouseup="stopBottomNote()">Play Bottom Note</div>
+				<div class="button buttonItem3" ng-click="checkAnswer()">Check Answer</div>
+			</div>
+			<!-- <div>
+			<div class="buttonSection">
+				<div class="button"> Score: {{scoreCount}}</div>
+				
+			</div> -->
 	</body>
 	<footer>
 		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
