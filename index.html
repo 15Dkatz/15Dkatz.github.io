@@ -14,7 +14,8 @@
 		<div ng-controller="listenController">
 			<h2>Ear train with your voice, piano, or any musical instrument!</h2>
 			<!-- Add descending option... -->
-			<div class="card">The program will provide an interval with a bottom and top note, as well as the interval quality and length. The program will play the bottom note for you, but you get to sing the top note to complete the interval!</div>
+			<div class="card">You will be given an interval with a bottom and top note, as well as the interval quality and length. You can play the bottom note, but you have to sing the top note to complete the interval! Press <strong>Begin</strong> to start.</div>
+			<br><br><br><br><br><br><br><br>
 			<!-- <div class="icon android-microphone-off"></div> -->	
 			<!-- If microphone listening, then switch icon to android-microphone -->
 			<div class="quizLine">Sing the {{intervalLength}} up from {{bottomNote}}</div>
@@ -27,8 +28,8 @@
 
 
 			<div class="button buttonRecord" ng-mousedown="listen()" ng-mouseup="stopListen()">Record</div>
-			<div>
-				<div class="button buttonItem3" ng-click="generateInterval()">Next</div>
+			<div class="buttonRow3">
+				<div class="button buttonItem3" ng-click="generateInterval()">{{giButtonDisplay}}</div>
 				<div class="button buttonItem3" ng-mousedown="playBottomNote()" ng-mouseup="stopBottomNote()">Play Bottom Note</div>
 				<div class="button buttonItem3" ng-click="checkAnswer()">Check Answer</div>
 			</div>

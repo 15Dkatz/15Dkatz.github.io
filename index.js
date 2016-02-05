@@ -45,7 +45,10 @@ micApp.controller("listenController", function($scope) {
 
 	var bottomNoteFQ = "...";
 
+	$scope.giButtonDisplay = "Begin";
+
 	$scope.generateInterval = function() {
+		$scope.giButtonDisplay = "Next";
 		//pick a random number 33-45, or F3 to F4.
 		//convert that number into a teoria key or note value.
 		//make that note playable (sound) with another function.
@@ -132,6 +135,8 @@ micApp.controller("listenController", function($scope) {
 
 })
 
+
+//check bugs.
 
 
 //add Play bottomNote function.
