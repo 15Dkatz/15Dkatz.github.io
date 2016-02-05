@@ -43,6 +43,8 @@ micApp.controller("listenController", function($scope) {
 	$scope.topNote = undefined;
 	$scope.intervalLength = undefined;
 
+	var bottomNoteFQ = undefined;
+
 	$scope.generateInterval = function() {
 		//pick a random number 33-45, or F3 to F4.
 		//convert that number into a teoria key or note value.
@@ -55,6 +57,7 @@ micApp.controller("listenController", function($scope) {
 		console.log(randKeyNum, "rkm");
 
 		var noteFromKey = teoria.note.fromKey(randKeyNum);
+		bottomNoteFQ=noteFromKey.fq();
 		$scope.bottomNote = noteFromKey.name().toUpperCase() + noteFromKey.accidental() + noteFromKey.octave();
 
 		var topNoteFromTop = teoria.note.fromKey(randKeyTop);
@@ -106,15 +109,22 @@ micApp.controller("listenController", function($scope) {
 		bnSine.play({
 			volume: 0.8,
 			wait: 0,
-			pitch: $scope.bottomNote,
+			pitch: bottomNoteFQ,
+			env: {
+				attack: 0.0,
+				decay: 0.5,
+				sustain: 0.25,
+				hold: 0.25,
+			},
 			filter: {frequency: 900}
 		})
 		console.log("playing", $scope.bottomNote);
+		console.log("bottomNote fq = ", bottomNoteFQ);
 	}
 
 	$scope.stopBottomNote = function() {
 		//stop bottom Note...
-		bnSine.stop($scope.bottomNote);
+		bnSine.stop(bottomNoteFQ);
 		console.log("stopping", $scope.bottomNote);
 	}
 
