@@ -12,27 +12,37 @@
 	</head>
 	<body ng-app="micApp">
 		<div ng-controller="listenController">
-			<h2>Ear train with your voice, piano, or any musical instrument!</h2>
+			<div id="title">Ear train with your voice, piano, or any musical instrument!</div>
 			<!-- Add descending option... -->
-			<div class="card">You will be given an interval with a bottom and top note, as well as the interval quality and length. You can play the bottom note, but you have to sing the top note to complete the interval! Press <strong>Begin</strong> to start.</div>
-			<br><br><br><br><br><br><br><br>
+			<div class="card cardInstructions">
+				You will be given a bottom note, and an interval quality and length. Your objective is to sing (or play) the top note! 
+				<br>
+				<br>
+				<strong>Begin</strong> to bring up an interval. Play the
+				<br>
+				<strong>Bottom Note</strong> to get your bearings.<br>
+				<strong>Record</strong> while you sing a note. Once your note is <strong class="blkStrong">Heard</strong> go ahead and <strong>Check</strong> your answer!
+			</div>
 			<!-- <div class="icon android-microphone-off"></div> -->	
 			<!-- If microphone listening, then switch icon to android-microphone -->
-			<div class="quizLine">Sing the {{intervalLength}} up from {{bottomNote}}</div>
-
-			<div class="card cardHeard">Heard: <div id="userNoteDisplay">{{userNote}}</div>
-				<div class="scoreLine">
-					<div>Score: {{scoreCount}} / {{total}}</div>
-				</div>
+			<div class="card cardHeard">
+				<span class="quizLine">Sing the <strong>{{intervalLength}}</strong> up from <strong>{{bottomNote}}</strong></span>
+				<br>
+				Heard:
+				<br>
+				<span id="userNoteDisplay"><strong>{{userNote}}</strong></span>
+				<br>
+				<span class="scoreLine">Score: {{scoreCount}} / {{total}}</span>
+				<br>
 			</div>
 
 
 			<div class="button buttonRecord" ng-mousedown="listen()" ng-mouseup="stopListen()">Record</div>
-			<div class="buttonRow3">
-				<div class="button buttonItem3" ng-click="generateInterval()">{{giButtonDisplay}}</div>
-				<div class="button buttonItem3" ng-mousedown="playBottomNote()" ng-mouseup="stopBottomNote()">Play Bottom Note</div>
-				<div class="button buttonItem3" ng-click="checkAnswer()">Check Answer</div>
-			</div>
+			<ul class="buttonRow3">
+				<li class="button buttonItem3" ng-click="generateInterval()">{{giButtonDisplay}}</li>
+				<li class="button buttonItem3" ng-mousedown="playBottomNote()" ng-mouseup="stopBottomNote()">Play Bottom Note</li>
+				<li class="button buttonItem3" ng-click="checkAnswer()">Check</li>
+			</ul>
 			<!-- <div>
 			<div class="buttonSection">
 				<div class="button"> Score: {{scoreCount}}</div>

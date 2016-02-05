@@ -94,7 +94,8 @@ micApp.controller("listenController", function($scope) {
 			$scope.scoreCount=0;
 			console.log("Try again!");
 		}
-		total++;
+		$scope.total++;
+		$scope.generateInterval();
 	} 
 
 	var bnSine = new Wad({source: 'sine'});

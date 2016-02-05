@@ -6,6 +6,17 @@ strong {
 	color: #1e88e5;
 }
 
+#title {
+	width: 50%;
+	margin-left: 25%;
+	font-size: 3.8rem;
+	font-weight: bold;
+}
+
+.blkStrong {
+	color: #000;
+}
+
 
 .quizLine {
 	/*margin-top: 1	5%;*/
@@ -13,21 +24,27 @@ strong {
 }
 
 .card {
-	font-size: 16px;
+	font-size: 1.8rem;
 	padding: 2%;
 	/*margin-top: 2%;*/
-	float: left;
+	float: inline;
 	width: 50%;
 	left: 25%;
-	right: 10%;
+	/*margin-right: 25%;*/
+}
+
+.cardInstructions {
+	text-align: left;
 }
 
 .cardHeard {
+	top: 2%;
 	padding: 1%;
 	width: 50%;
 	left: 25%;
-	height: 150px;
-	font-size: 24px;
+	/*right: 25%;*/
+	height: 20%;
+	font-size: 2.3rem;
 }
 
 #userNoteDisplay {
@@ -36,9 +53,8 @@ strong {
 }
 
 
-
 .scoreLine {
-	font-size: 18px;
+	font-size: 2.3rem;
 	/*margin-bottom: -1%;*/
 }
 
@@ -46,7 +62,7 @@ strong {
 	/*margin-top: 2.5%;*/
 	float: left;
 	/*margin-left: 12.5%;*/
-	height: 50px;
+	height: 10%;
 	padding: 2%;
 	width: 30%;
 	/*height: 30px;*/
@@ -55,15 +71,16 @@ strong {
 	background: #1e88e5;
 	color: #fff;	
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 1.5rem;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
 .buttonRecord {
 	/*height: 50px;*/
-	padding-top: 1%;
-	font-size: 18px;
+	/*font-size: 2rem;*/
 	/*padding-bottom: -2px;*/
+	padding: 1.2%;
+	height: 8%;
 	width: 50%;
 	margin-left: 25%;
 	margin-top: 1%;
@@ -74,12 +91,14 @@ strong {
 	margin-left: 23.25%;
 	width: 52.25%;
 	float: inline;
-	margin-top: 6%;
+	/*margin-top: 6%;*/
 	/*left: 25%;*/
+	/*height: 10%;*/
 }
 
 
 .buttonItem3 {
+	/*height: 10%;*/
 	margin-top: 2%;
 	margin-left: 3%;
 }
