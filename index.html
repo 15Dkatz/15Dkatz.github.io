@@ -13,7 +13,6 @@
 	<body ng-app="micApp">
 		<div ng-controller="listenController">
 			<div id="title">Ear train with your voice!</div>
-			<!-- Add descending option... -->
 			<div class="card cardInstructions">
 				You will be given a bottom note, and an interval quality and length. Your objective is to sing (or play with an instrument) the top note! 
 				<br>
@@ -23,8 +22,6 @@
 				<strong>Bottom Note</strong> to get your bearings.<br>
 				<strong>Record</strong> while you sing a note. Once your note is <strong class="blkStrong">Heard</strong> go ahead and <strong>Check</strong> your answer!
 			</div>
-			<!-- <div class="icon android-microphone-off"></div> -->	
-			<!-- If microphone listening, then switch icon to android-microphone -->
 			<div class="card cardHeard">
 				<span class="quizLine">Sing the <strong>{{intervalLength}}</strong> up from <strong>{{bottomNote}}</strong></span>
 				<br>
@@ -43,11 +40,6 @@
 				<li class="button buttonItem3" ng-mousedown="playBottomNote()" ng-mouseup="stopBottomNote()">Play Bottom Note</li>
 				<li class="button buttonItem3" ng-click="checkAnswer()">Check</li>
 			</ul>
-			<!-- <div>
-			<div class="buttonSection">
-				<div class="button"> Score: {{scoreCount}}</div>
-				
-			</div> -->
 	</body>
 	<footer>
 		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>

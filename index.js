@@ -6,39 +6,25 @@ micApp.controller("listenController", function($scope) {
 
 	$scope.userNote="...";
 
-	// var kill=false;
 
 	$scope.listen = function() {
-		// if (!kill===true) {
-		voice.play({volume: 0.2});
+		voice.play({volume: 0.6});
 		tuner.updatePitch();
 
 		var logPitch = function(){
-
-			$scope.userNote=tuner.noteName;
-
+			$scope.userNote=tuner.noteName.substr(0, tuner.noteName.length-1);
 			console.log($scope.userNote, "userNote");
-
 			console.log(tuner.pitch, tuner.noteName);
-			// requestAnimationFrame(logPitch);
 		};
-		// tuner.stopUpdatingPitch();
 		logPitch();
-		// }
 	}
 
 	$scope.stopListen = function() {
-		// tuner.stopUpdatingPitch();
-		// stop = 0;
-		// kill=true;
 		tuner.stop();
 		voice.stop();
 		tuner.stopUpdatingPitch();
 	}
 
-
-
-	// var noteNames = ['f3', 'f']
 	$scope.bottomNote = "...";
 	$scope.topNote = "...";
 	$scope.intervalLength = "...";
@@ -49,11 +35,7 @@ micApp.controller("listenController", function($scope) {
 
 	$scope.generateInterval = function() {
 		$scope.giButtonDisplay = "Next";
-		//pick a random number 33-45, or F3 to F4.
-		//convert that number into a teoria key or note value.
-		//make that note playable (sound) with another function.
 		var randKeyNum = Math.floor(Math.random()*12)+33;
-
 		var randKeyTop = randKeyNum+(Math.floor(Math.random()*12));
 		
 		//debugging
@@ -66,19 +48,15 @@ micApp.controller("listenController", function($scope) {
 
 		var topNoteFromTop = teoria.note.fromKey(randKeyTop);
 		$scope.topNote = topNoteFromTop.name().toUpperCase() + topNoteFromTop.accidental();
-
 		//debugging
 		console.log($scope.bottomNote, $scope.topNote, "n->t")
 		console.log(teoria.interval.between(noteFromKey, topNoteFromTop).toString(), 'i');
 
-		// $scope.bottomNote = bottomNote;
 		$scope.intervalLength=teoria.interval.between(noteFromKey, topNoteFromTop).toString();
 
 	}
 
 	$scope.scoreCount=0;
-	// $scope.userNote=$scope.userNote.toUpperCase();
-
 	$scope.total=0;
 
 	$scope.checkAnswer = function() {
@@ -90,7 +68,6 @@ micApp.controller("listenController", function($scope) {
 		if (teoria.note(uNote).chroma() === teoria.note(tNote).chroma()) {
 			$scope.scoreCount++;
 		} else {
-			//resetting high score Code here.
 			$scope.scoreCount=0;
 			console.log("Try again!");
 		}
@@ -101,8 +78,6 @@ micApp.controller("listenController", function($scope) {
 	var bnSine = new Wad({source: 'sine'});
 
 	$scope.playBottomNote = function() {
-
-		//play battom Note...
 		bnSine.play({
 			volume: 0.8,
 			wait: 0,
@@ -120,25 +95,13 @@ micApp.controller("listenController", function($scope) {
 	}
 
 	$scope.stopBottomNote = function() {
-		//stop bottom Note...
 		bnSine.stop(bottomNoteFQ);
 		console.log("stopping", $scope.bottomNote);
 	}
-
-
-	//use teoria.js to pick a bottomNote from C3-C4.
-	//allow user to play note using wad.
-
-	//display the sung/played note.
-
-
-
-
 })
 
 
-//check bugs.
-
-
-//add Play bottomNote function.
-//make this real time.
+//Improvements:
+//Add a check mark, or an 'x' mark depending on whether or not the user sings and checks the correct note.
+//Add a descending option, where the user has to sing the bottom note of an interval, and the app gives the top note.
+//real time capability perhaps, similar to a guitar tuner, where it check for a correct answer depending if a certain note gets hold for a certain amount of time.

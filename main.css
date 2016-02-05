@@ -17,20 +17,16 @@ strong {
 	color: #000;
 }
 
-
 .quizLine {
-	/*margin-top: 1	5%;*/
 	font-size: 26px;
 }
 
 .card {
 	font-size: 1.8rem;
 	padding: 2%;
-	/*margin-top: 2%;*/
 	float: inline;
 	width: 50%;
 	left: 25%;
-	/*margin-right: 25%;*/
 }
 
 .cardInstructions {
@@ -42,31 +38,23 @@ strong {
 	padding: 1%;
 	width: 50%;
 	left: 25%;
-	/*right: 25%;*/
 	height: 20%;
 	font-size: 2.3rem;
 }
 
 #userNoteDisplay {
-	/*padding-top: 10px;*/
 	font-size: 34px;
 }
 
-
 .scoreLine {
 	font-size: 2.3rem;
-	/*margin-bottom: -1%;*/
 }
 
 .button {
-	/*margin-top: 2.5%;*/
 	float: left;
-	/*margin-left: 12.5%;*/
 	height: 10%;
 	padding: 2%;
 	width: 30%;
-	/*height: 30px;*/
-	/*padding-top: 5px;*/
 	border-radius: 5px;
 	background: #1e88e5;
 	color: #fff;	
@@ -76,33 +64,20 @@ strong {
 }
 
 .buttonRecord {
-	/*height: 50px;*/
-	/*font-size: 2rem;*/
-	/*padding-bottom: -2px;*/
 	padding: 1.2%;
 	height: 8%;
 	width: 50%;
 	margin-left: 25%;
 	margin-top: 1%;
-	/*left: 25%;*/
 }
 
 .buttonRow3 {
 	margin-left: 23.25%;
 	width: 52.25%;
 	float: inline;
-	/*margin-top: 6%;*/
-	/*left: 25%;*/
-	/*height: 10%;*/
 }
 
-
 .buttonItem3 {
-	/*height: 10%;*/
 	margin-top: 2%;
 	margin-left: 3%;
 }
-
-/*.buttonSection {
-	width: 100%;
-}*/
