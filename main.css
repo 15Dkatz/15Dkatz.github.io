@@ -2,6 +2,7 @@ body {
 	text-align: center;
 }
 
+<<<<<<< HEAD
 p {
 	float: inline;
 	width: 80%;
@@ -26,4 +27,84 @@ p {
 
 .title2 {
 	margin-top: -10%;
+=======
+strong {
+	color: #1e88e5;
+}
+
+#title {
+	width: 50%;
+	margin-left: 25%;
+	font-size: 3.8rem;
+	font-weight: bold;
+}
+
+.blkStrong {
+	color: #000;
+}
+
+.quizLine {
+	font-size: 26px;
+}
+
+.card {
+	font-size: 1.8rem;
+	padding: 2%;
+	float: inline;
+	width: 50%;
+	left: 25%;
+}
+
+.cardInstructions {
+	text-align: left;
+}
+
+.cardHeard {
+	top: 2%;
+	padding: 1%;
+	width: 50%;
+	left: 25%;
+	height: 20%;
+	font-size: 2.3rem;
+}
+
+#userNoteDisplay {
+	font-size: 34px;
+}
+
+.scoreLine {
+	font-size: 2.3rem;
+}
+
+.button {
+	float: left;
+	height: 10%;
+	padding: 2%;
+	width: 30%;
+	border-radius: 5px;
+	background: #1e88e5;
+	color: #fff;	
+	font-weight: bold;
+	font-size: 1.5rem;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.buttonRecord {
+	padding: 1.2%;
+	height: 8%;
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 1%;
+}
+
+.buttonRow3 {
+	margin-left: 23.25%;
+	width: 52.25%;
+	float: inline;
+}
+
+.buttonItem3 {
+	margin-top: 2%;
+	margin-left: 3%;
+>>>>>>> 2e7ace2bb579c332b7b1434ca35b84a9361261e6
 }
