@@ -4,3 +4,6 @@
 [submodule "projects/rhythmMaster"]
 	path = projects/rhythmMaster
 	url = https://github.com/15Dkatz/rhythmMaster
+[submodule "projects/IntervalMaster-angularJS"]
+	path = projects/IntervalMaster-angularJS
+	url = https://github.com/15Dkatz/IntervalMaster-angularJS.git
