@@ -1,3 +1,6 @@
 [submodule "projects/pitchIntervalMaster"]
 	path = projects/pitchIntervalMaster
 	url = https://github.com/15Dkatz/pitchIntervalMaster.git
+[submodule "projects/rhythmMaster"]
+	path = projects/rhythmMaster
+	url = https://github.com/15Dkatz/rhythmMaster
