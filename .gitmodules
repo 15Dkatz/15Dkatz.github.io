@@ -7,3 +7,6 @@
 [submodule "projects/IntervalMaster-angularJS"]
 	path = projects/IntervalMaster-angularJS
 	url = https://github.com/15Dkatz/IntervalMaster-angularJS.git
+[submodule "IntervalMaster-angularJS"]
+	path = IntervalMaster-angularJS
+	url = https://github.com/15Dkatz/IntervalMaster-angularJS.git
