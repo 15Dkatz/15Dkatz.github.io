@@ -10,3 +10,6 @@
 [submodule "projects/rhythmMasterPro"]
 	path = projects/rhythmMasterPro
 	url = https://github.com/15Dkatz/rhythmMasterPro.git
+[submodule "projects/taskMaster"]
+	path = projects/taskMaster
+	url = https://github.com/15Dkatz/taskMasterPro.git
