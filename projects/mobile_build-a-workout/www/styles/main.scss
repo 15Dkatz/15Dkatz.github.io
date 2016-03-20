@@ -1,0 +1,9 @@
+/**
+ * import variables and mixins, so we can use them below
+ */
+@import '_variables.scss';
+@import '../bower_components/ionic/scss/_mixins.scss';
+
+.cards-bg {
+  background: $light;
+}

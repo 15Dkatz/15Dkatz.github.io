@@ -1,0 +1,64 @@
+<ion-view view-title="Build">
+  <ion-content class="">
+    <div class="list">
+	    <div class="row">
+	    	<div class="col">
+	    		<button class="button button-block" ng-disabled="myform.$invalid" ng-click="openPopover($event)">Manual</button>
+	    	</div>
+	    	<div class="col">
+	    		<button class="button button-block" ng-click="autoBuild = !autoBuild">Automatic</button>
+	    	</div>
+	    </div>
+
+	    <div ng-show="autoBuild">
+	    	<label class="item item-input item-stacked">
+	    		<span class="input-label">Exercises:</span>
+	    		<span class="range">
+	    			<input class="range" type="range" string-to-number min="0" max="100" ng-model="numOfExercises"/>
+	    		</span>
+	    		<input type="tel" ng-model="numOfExercises"/>
+	  		</label>
+	        <label class="item item-input">
+	    		<span class="input-label">Seconds:</span>
+	    		<span class="range">
+	    			<input class="range" type="range" string-to-number min="0" max="100" ng-model="timeForExercises"/>
+	    		</span>
+	    		<input type="tel" ng-model="timeForExercises"/>
+	  		</label>
+	        <ion-list>
+	        	<div class="item item-divider">
+	        		<h2 class="title left">Category</h2>
+	  			</div>
+
+	  			<!-- make an ng-repeat list of categories -->
+	  			<div ng-repeat="category in categories">
+		  			<label>
+		  				<ion-radio type="radio" ng-value="category.array" ng-model="$parent.selectedCategory">{{category.name}}</ion-radio>
+		  			</label>
+		  		</div>
+
+		  		<!-- <div class="item item-icon-right">
+		  			Add Custom Category 
+		  			<! different popOver -->
+		  			<!-- <i class="icon ion-plus-circled" ng-click="" side="right"></i> -->
+		  				<!-- pull up sidebar to create custom set -->
+		  		 <!-- </div>  -->
+		  		<!-- open sidenav bar -->
+
+	  			<!-- CREATE CUSTOM Category -->
+	  			<!-- build random set -->
+			</ion-list>
+	        <div class="item">
+		        <button class="button button-block" ng-disabled="myform.$invalid" ng-click="build(numOfExercises, timeForExercises, selectedCategory)">Execute</button>
+		        
+	        </div>
+
+        </div>
+    </div> <!--list -->
+  </ion-content>
+</ion-view>
+
+<!-- UI updates:  -->
+	<!-- Make button-outline thicker with clear background  -->
+	<!-- add colored backgrounds -->
+
