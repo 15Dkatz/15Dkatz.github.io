@@ -16,3 +16,7 @@
 [submodule "projects/mailMeMyList"]
 	path = projects/mailMeMyList
 	url = https://github.com/15Dkatz/mailMeMyList.git
+[submodule "projects/tempoday-sass”]
+	path = projects/tempoday-sass
+	url = https://github.com/15Dkatz/tempoday-sass.git
+
