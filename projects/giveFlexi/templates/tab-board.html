@@ -1,0 +1,30 @@
+<ion-view view-title="Board">
+  <ion-nav-bar class="bar-stable">
+    <ion-nav-buttons side="right">
+      <button class="button button-clear button-dark" ng-click="loadFeeds()">Load Lists</button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+
+  <ion-content class="" ng-init="loadFeeds()">
+    <div class="bar bar-stable subheader">
+        <h1 class="title">Give Flexi</h1>
+        <button class="button button-clear icon-left ion-plus-circled" ng-click="addPost('give')"></button>
+    </div>
+
+    <ion-list class="list">
+      <ion-item ng-repeat="post in giveList track by $index" class="item icon-left">
+       Give ${{post.dollars}} &nbsp;&nbsp;&nbsp; {{post.number}}  &nbsp;&nbsp;&nbsp; {{post.firstName}} {{post.lastName}}
+      </ion-item>
+    </ion-list>
+    <div class="bar bar-stable subheader">
+        <h1 class="title">Get Flexi</h1>
+        <button class="button button-clear icon-left ion-plus-circled" ng-click="addPost('get')"></button>
+    </div>
+    <ion-list class="">
+      <ion-item ng-repeat="post in getList track by $index" class="item icon-left">
+       Get ${{post.dollars}} &nbsp;&nbsp;&nbsp; {{post.number}} &nbsp;&nbsp;&nbsp; {{post.firstName}} {{post.lastName}}
+      </ion-item>
+    </ion-list>
+  </div>
+  </ion-content>
+</ion-view>

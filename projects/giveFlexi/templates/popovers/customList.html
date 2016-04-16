@@ -1,0 +1,73 @@
+<ion-popover-view class="ion-popover">
+    <ion-content>
+        <!-- <div class="list positive" ng-click="popover.hide()">
+            <a class="item ion-gear-b" href="#/app/settings">
+                Settings
+            </a>
+            <a class="item ion-speakerphone" href="#/app/feedback">
+                Feedback
+            </a>
+        </div> -->
+        <div class="bar subheader">
+      		<button class="button button-clear button-dark icon-left ion-minus-circled" ng-click="data.shouldShowDelete = !data.shouldShowDelete"></button>
+	      	<button class="button button-clear button-dark icon-left ion-plus-circled" ng-click="addToCustomCat()"></button>
+	      <!-- + button to addTask oneAtATime -->
+
+	      	<!-- fix font size!! -->
+	        <h1 class="title">
+	        	Custom Set
+	        </h1>
+	        <button class="button button-clear button-dark icon-right" ng-click="setCustomCat()">Execute</button>
+	    </div>
+
+	    <ion-list class="list" show-delete="data.shouldShowDelete">
+	      <br>
+	      <br>
+
+	      <ion-item ng-repeat="exercise in customCategory track by $index" class="item icon-left">
+	       <!-- {{exercise.exercise}} -->
+	       	<div class="row inputUp">
+		       	<div class="col col-50">
+		       	<input type="text" class="inputIndent" ng-model="exercise.exercise" placeholder=""></input>
+		       	</div>
+		        <div class="col col-50">
+		        	<input type="tel" class="inputIndent" ng-model="exercise.time" placeholder="">
+		        	<!-- <span class="item-note">seconds</span> -->
+	        	</div>
+	        	<!-- <div class="col col-25">submit</div> -->
+        	</div>
+        	<ion-delete-button class="ion-minus-circled" ng-click="removeExercise($index)"></ion-delete-button>
+
+	      </ion-item>
+	      <!-- <ion-item>
+	      	
+	      </ion-item> -->
+	    </ion-list>
+
+    </ion-content>
+</ion-popover-view>
+
+<!-- edit popover to include the adding feature -->
+
+<!--  <label class="item item-input">
+    		<span class="input-label">Time for each&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    		<span class="range">
+    			<input class="range" type="range" string-to-number min="0" max="100" ng-model="timeForExercises"/>
+    		</span>
+    		<input type="tel" ng-model="timeForExercises"/>
+  		</label> -->
+
+
+
+
+<!-- $scope.categories = [
+        {
+            name: "Abs",
+            array: abExercises
+        },
+        {
+            name: "Cardio",
+            array: cardioExercises
+        }
+    ];
+ -->

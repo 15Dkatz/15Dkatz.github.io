@@ -1,0 +1,9 @@
+p {
+  margin: 0 0 ($line-height-computed / 2);
+  font-weight: $body-font-weight;
+}
+
+small {
+  font-size: 60%;
+  font-weight: $small-font-weight;
+}

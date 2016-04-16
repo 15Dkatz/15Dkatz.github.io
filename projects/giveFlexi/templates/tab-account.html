@@ -1,0 +1,62 @@
+<ion-view view-title="Account">
+  <!-- </ion-header-bar> -->
+   <ion-nav-bar class="bar grey">
+    <ion-nav-buttons side="right">
+    <button class="button button-clear button-dark" ng-click="logout()">Logout</button>
+  </ion-nav-buttons>
+
+  </ion-nav-bar>
+  <ion-content>
+    <div class="list">
+		<div class="item">
+			<h2 class="title">{{firstname}} {{lastname}}</h2>
+
+			<!-- Add offline capabilities!
+			https://www.firebase.com/docs/web/guide/offline-capabilities.html -->
+
+
+		</div>
+		<div class="item item-input-inset">
+		   	<label class="item-input-wrapper">
+		      	<input type="text" placeholder="Change First Name" ng-model="newFirstname" class="inputIndent">
+		    </label>
+		    <button class="button button-small" ng-click="updateFirstname(newFirstname)">
+		 	    Submit
+		    </button>
+		 </div>
+		 <div class="item item-input-inset">
+		   	<label class="item-input-wrapper">
+		      	<input type="text" placeholder="Change Last Name" ng-model="newLastname" class="inputIndent">
+		    </label>
+		    <button class="button button-small" ng-click="updateLastname(newLastname)">
+		 	    Submit
+		    </button>
+		 </div>
+		 <!-- checking a change -->
+		 <div class="item item-input-inset">
+		   	<label class="item-input-wrapper">
+		      	<input type="text" placeholder="Change Email" ng-model="newEmail" class="inputIndent">
+		    </label>
+		    <button class="button button-small" ng-click="updateEmail()">
+		 	    Submit
+		    </button>
+		 </div>
+		 <div class="item item-input-inset">
+		   	<label class="item-input-wrapper">
+		      	<input type="text" placeholder="Change Password" ng-model="newPassword" class="inputIndent">
+		    </label>
+		    <button class="button button-small" ng-click="updatePassword(password)">
+		 	    Submit
+		    </button>
+		 </div>
+		 <!-- <div class="bottom">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+ -->
+	</div>
+  </ion-content>
+</ion-view>
+
+<!-- never run grunt:emulate ios -->
+<!-- simply run ionic emulate ios -->
+
+
+<!-- ADD! send reset email button! -->

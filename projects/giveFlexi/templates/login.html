@@ -1,0 +1,53 @@
+<!-- change login and register to the account tab -->
+
+
+<ion-view view-title="Donate your Flexi">
+  <!-- </ion-header-bar> -->
+<!--     <ion-nav-buttons side="left">
+      <button class="button button-clear button-dark" ng-disabled="myform.$invalid" ng-click="login(user.email, user.password)">Register</button>
+    </ion-nav-buttons> -->
+   <!-- <ion-nav-bar class="bar grey">
+    <ion-nav-buttons side="right">
+      <button class="button button-clear button-dark" ng-disabled="myform.$invalid" ng-click="login(user.email, user.password)">Login</button>
+    </ion-nav-buttons>
+  </ion-nav-bar> -->
+  <ion-content>
+    <!-- <form name="myform" novalidate> -->
+      <!-- <fieldset> -->
+        <div class="list">
+          <label class="item item-input item-floating-label">
+            <input type="email" name="email" placeholder="Email"
+             ng-model="user.email" ng-required="true" class="inputIndent">
+            <p class="" ng-show="myform.email.$invalid && myform.email.$touched">
+              Must be a valid email
+            </p>
+          </label>
+          <label class="item item-input item-floating-label">
+            <input type="password" name="password" placeholder="Password"
+            ng-model="user.password" ng-required="true" class="inputIndent">
+            <p class="" ng-show="myform.password.$invalid && myform.email.$touched">
+              Password is required
+            </p>
+            <p class="">
+              {{message}} 
+            </p>
+            <p>
+              
+              <!-- popup with email -->
+              {{emailResetMessage}}
+            </p>
+
+            
+          </label>
+          <div class="item">
+            <p>
+              <a ng-click="resetPassword()" ng-href="#/login">Forgot password?</a>
+            </p>
+            <button type="submit" class="button button-block" ng-disabled="myform.$invalid" ng-click="login(user.email, user.password)">Login</button>
+            <p><a ng-href="#/register">Create an account</a> if you haven't yet.</p>
+          </div>
+        </div>
+      <!-- </fieldset> -->
+    <!-- </form> -->
+  </ion-content>
+</ion-view>
