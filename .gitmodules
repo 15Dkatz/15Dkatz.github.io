@@ -10,8 +10,8 @@
 [submodule "projects/mailMeMyList"]
 	path = projects/mailMeMyList
 	url = https://github.com/15Dkatz/mailMeMyList.git
-#[submodule "projects/pitchIntervalMaster/common_code”]
-#	path = projects/pitchIntervalMaster
+#[submodule "projects/pitchIntervalMaster/”]
+#	path = projects/pitchIntervalMaster/
 #	url = https://github.com/15Dkatz/pitchIntervalMaster.git
 
 
