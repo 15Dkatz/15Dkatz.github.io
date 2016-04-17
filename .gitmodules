@@ -10,9 +10,9 @@
 [submodule "projects/taskMaster"]
 	path = projects/taskMaster
 	url = https://github.com/15Dkatz/taskMasterPro.git
-#[submodule "projects/mailMeMyList"]
-#	path = projects/mailMeMyList
-#	url = https://github.com/15Dkatz/mailMeMyList.git
+[submodule "projects/mailMeMyList"]
+	path = projects/mailMeMyList
+	url = https://github.com/15Dkatz/mailMeMyList.git
 
 #[submodule "projects/giveFlexi”]
 #	path = projects/giveFlexi
