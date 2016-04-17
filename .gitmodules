@@ -18,8 +18,8 @@
 #	path = projects/giveFlexi
 #	url = https://github.com/15Dkatz/giveFlexi.git
 #[submodule "projects/Intervalmaster-angularJS”]
-	path = projects/Intervalmaster-angularJS
-	url = https://github.com/15Dkatz/IntervalMaster-angularJS.git
+#	path = projects/Intervalmaster-angularJS
+#	url = https://github.com/15Dkatz/IntervalMaster-angularJS.git
 
 
 
