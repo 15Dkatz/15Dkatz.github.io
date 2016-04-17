@@ -13,12 +13,15 @@
 [submodule "projects/mailMeMyList"]
 	path = projects/mailMeMyList
 	url = https://github.com/15Dkatz/mailMeMyList.git
-[submodule "projects/giveFlexi”]
-	path = projects/giveFlexi
-	url = https://github.com/15Dkatz/giveFlexi.git
-[submodule "projects/Intervalmaster-angularJS”]
-	path = projects/IntervalMasterAngularJS
-	url = https://github.com/15Dkatz/IntervalMaster-angularJS.git
+[submodule "projects/mailMeMyList"]
+	path = projects/mailMeMyList
+	url = https://github.com/15Dkatz/mailMeMyList.git
+#[submodule "projects/giveFlexi”]
+#	path = projects/giveFlexi
+#	url = https://github.com/15Dkatz/giveFlexi.git
+#[submodule "projects/Intervalmaster-angularJS”]
+#	path = projects/IntervalMasterAngularJS
+#	url = https://github.com/15Dkatz/IntervalMaster-angularJS.git
 
 
 
