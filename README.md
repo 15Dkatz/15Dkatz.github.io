@@ -1,4 +1,3 @@
-My project Website. 
+# react-personal-site
 
-Tasks: Improve UI. Make more interactive. Change DNS to davidtkatz.com
-
+Check it out at [davidtkatz.com](http://davidtkatz.com/)
